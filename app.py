@@ -20,6 +20,21 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 #git add --all && git commit -m "v0.0.1" && git push
+
+# ---- HEADER SECTION ----
+with st.container():
+    st.subheader("webApp powered by Streamlit")
+    st.title("Pokorný Jan, 2024")
+    st.write(
+       """
+        https://github.com/BUT-JP/Python_WebApp
+        git add --all && git commit -m "v0.0.1" && git push
+       """
+    )
+    st.write("[Learn More >](https://pythonandvba.com)")
+
+
+
 local_css("style/style.css")
 
 '''
