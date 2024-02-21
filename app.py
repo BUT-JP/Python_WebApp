@@ -23,10 +23,11 @@ def local_css(file_name):
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.title(" webApp powered by Streamlit")
+    st.title(" WebApp powered by Streamlit")
     st.subheader("Pokorný Jan, 2024")
     st.write(
        """
+        - lze embedovat kamkoliv a pokud použiji GIT tak se to projeví všude na všech webech, kde jsem to embedoval např. https://sites.google.com/vutbr.cz/vutlca/api
         - https://github.com/BUT-JP/Python_WebApp
         - git add --all && git commit -m "v0.0.1" && git push
        """
@@ -186,6 +187,7 @@ with st.container():
             - -----------------------------------------------------------------------------   
             - https://towardsdatascience.com/3-easy-ways-to-deploy-your-streamlit-web-app-online-7c88bb1024b1
             - https://docs.streamlit.io/streamlit-community-cloud/share-your-app/embed-your-app
+              https://pythonwebapp-m7chhvdpacwkmeqpvsed8b.streamlit.app//?embed=true   
             """
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
