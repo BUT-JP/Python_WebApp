@@ -29,6 +29,7 @@ with st.container():
         - lze embedovat kamkoliv a pokud použiji GIT tak se to projeví všude na všech webech, kde jsem to embedoval např. https://sites.google.com/vutbr.cz/vutlca/api
         - https://github.com/BUT-JP/Python_WebApp (Python_WebApp  je private repository)
         - git add --all && git commit -m "v0.0.1" && git push
+        - lokální test cmdWIN: streamlit run d:\00_coding\00_python\07_streamlit\webpage\app.py
        """
     )
     st.write("[Learn More >](https://pythonandvba.com)")
@@ -196,20 +197,20 @@ with st.container():
     '''        
 
 
-import pandas as pd
-# import streamlit as st
+# import pandas as pd
+# # import streamlit as st
 
 
-df=pd.read_csv("test.csv")
+# df=pd.read_csv("test.csv")
 
-@st.cache
-def convert_df(df):
-    return df.to_html().encode('utf-8')
+# @st.cache
+# def convert_df(df):
+#     return df.to_html().encode('utf-8')
 
-html = convert_df(df)
+# html = convert_df(df)
 
-st.download_button(
-    "Press to Download",
-    html,
-    "test.html"
-)
+# st.download_button(
+#     "Press to Download",
+#     html,
+#     "test.html"
+# )
