@@ -20,7 +20,6 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 #git add --all && git commit -m "v0.0.1" && git push
-
 # ---- HEADER SECTION ----
 with st.container():
     st.title(" WebApp powered by Streamlit")
@@ -28,7 +27,7 @@ with st.container():
     st.write(
        """
         - lze embedovat kamkoliv a pokud použiji GIT tak se to projeví všude na všech webech, kde jsem to embedoval např. https://sites.google.com/vutbr.cz/vutlca/api
-        - https://github.com/BUT-JP/Python_WebApp
+        - https://github.com/BUT-JP/Python_WebApp (Python_WebApp  je private repository)
         - git add --all && git commit -m "v0.0.1" && git push
        """
     )
