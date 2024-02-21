@@ -167,13 +167,25 @@ with st.container():
             - paths must be relative to the root folder of the github repo to work on streamlit cloud
               
             Python na vše??? Python na matematické výpočty, na Webapp pomocí streamlit, WebAPI pomocí waitress, podopora PowerBI, a další...
-            
+            - -----------------------------------------------------------------------------               
+            - https://discuss.streamlit.io/t/streamlit-as-a-web-page/39112
+            - https://discuss.streamlit.io/t/using-streamlit-to-showcase-my-excel-or-google-sheets-on-a-webpage/51686
+            - read://https_discuss.streamlit.io/?url=https%3A%2F%2Fdiscuss.streamlit.io%2Ft%2Fnew-library-streamlit-jupyter-a-new-way-to-develop-streamlit-apps-in-jupyter-notebooks%2F35679
+            - https://www.root.cz/clanky/jupyter-notebook-nastroj-pro-programatory-vyzkumniky-i-lektory/     
+            -  https://www.dataquest.io/blog/jupyter-notebook-tutorial/      
+            - https://github.com/pyvec/naucse-python/blob/main/lessons/intro/notebook/index.ipynb
             - -----------------------------------------------------------------------------    
             - Streamlit code to html to be possible used as applet on sites,google
             - https://discuss.streamlit.io/t/saving-streamlit-application-to-a-webpage/2991
             - IMPORTANT: https://github.com/streamlit/streamlit/issues/611
             It would made streamlit extremely popular if the HTML export existed It is incredible usefull for Data Scientists and the stakeholders would love it
             I hope it gets implemented one day
+            - -----------------------------------------------------------------------------   
+            - https://stackoverflow.com/questions/74851816/how-to-download-streamlit-output-as-html-file    
+            - https://streamlit-release-demos-0-88streamlit-app-0-88-v8ram3.streamlit.app/#download-a-dataframe-converted-to-a-csv
+            - -----------------------------------------------------------------------------   
+            - https://towardsdatascience.com/3-easy-ways-to-deploy-your-streamlit-web-app-online-7c88bb1024b1
+            - https://docs.streamlit.io/streamlit-community-cloud/share-your-app/embed-your-app
             """
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
@@ -181,3 +193,22 @@ with st.container():
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
     '''        
+
+
+import pandas as pd
+# import streamlit as st
+
+
+df=pd.read_csv("test.csv")
+
+@st.cache
+def convert_df(df):
+    return df.to_html().encode('utf-8')
+
+html = convert_df(df)
+
+st.download_button(
+    "Press to Download",
+    html,
+    "test.html"
+)
