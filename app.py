@@ -1,24 +1,3 @@
-# https://share.streamlit.io/sven-bo/personal-website-streamlit/app.py
-# https://www.youtube.com/watch?v=VqgUkExPvLY
-# https://blog.streamlit.io/introducing-theming/
-# https://github.com/Sven-Bo/personal-website-streamlit
-# https://medium.com/mlearning-ai/pros-and-cons-of-streamlit-8715ca17cc84
-# https://blog.streamlit.io/host-your-streamlit-app-for-free/
-# https://docs.streamlit.io/knowledge-base/tutorials/deploy?ref=blog.streamlit.io
-# https://discuss.streamlit.io/t/is-it-possible-to-display-an-html-file-in-streamlit/23594/6
-# https://morioh.com/a/4d372cfa1d18/how-to-build-a-basic-dashboard-app-with-python-and-streamlit
-# https://python.plainenglish.io/5-creative-python-projects-to-automate-your-life-b3794518d2fc
-# -----------------------------------------------------------------------------
-# https://www.ditoweb.com/2011/08/how-to-copy-google-site-from-one-domain/
-# https://support.google.com/sites/thread/221205420/can-i-transfer-my-google-site-to-a-website-hosting-company?hl=en
-# -----------------------------------------------------------------------------
-# https://stackoverflow.com/questions/37643506/what-is-the-difference-between-a-web-application-and-web-api
-# -----------------------------------------------------------------------------
-# https://www.youtube.com/watch?v=nJHrSvYxzjE
-
-
-
-
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -48,8 +27,8 @@ local_css("style/style.css")
 lottie_coding = load_lottieurl(r"https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 '''
 
-img_contact_form = Image.open("images/yt_contact_form.png") 
-img_lottie_animation =Image.open('images/yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
+img_contact_form = Image.open("/images/yt_contact_form.png") 
+img_lottie_animation =Image.open('/images/yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
 
 
 # ---- HEADER SECTION ----
@@ -138,3 +117,45 @@ with st.container():
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
         st.empty()
+   
+# ---- VUT ----
+with st.container():
+    st.write("---")
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.header("Odkazy Streamlit, Github, apod.")
+        st.write("##")
+        st.write(
+            """
+            Zajímavé odkazy:
+            - https://share.streamlit.io/sven-bo/personal-website-streamlit/app.py
+            - https://www.youtube.com/watch?v=VqgUkExPvLY
+            - https://blog.streamlit.io/introducing-theming/
+            - https://github.com/Sven-Bo/personal-website-streamlit
+            - https://medium.com/mlearning-ai/pros-and-cons-of-streamlit-8715ca17cc84
+            - https://blog.streamlit.io/host-your-streamlit-app-for-free/
+            - https://docs.streamlit.io/knowledge-base/tutorials/deploy?ref=blog.streamlit.io
+            - https://discuss.streamlit.io/t/is-it-possible-to-display-an-html-file-in-streamlit/23594/6
+            - https://morioh.com/a/4d372cfa1d18/how-to-build-a-basic-dashboard-app-with-python-and-streamlit
+            - https://python.plainenglish.io/5-creative-python-projects-to-automate-your-life-b3794518d2fc
+            - -----------------------------------------------------------------------------
+            - https://www.ditoweb.com/2011/08/how-to-copy-google-site-from-one-domain/
+            - https://support.google.com/sites/thread/221205420/can-i-transfer-my-google-site-to-a-website-hosting-company?hl=en
+            - -----------------------------------------------------------------------------
+            - https://stackoverflow.com/questions/37643506/what-is-the-difference-between-a-web-application-and-web-api
+            - -----------------------------------------------------------------------------
+            - https://www.youtube.com/watch?v=nJHrSvYxzjE
+            - -----------------------------------------------------------------------------    
+            - https://discuss.streamlit.io/t/two-problems-when-deploying-from-a-folder-in-windows/56169/2
+              always use posix file paths with /, even on windows
+              always use relative paths
+              paths must be relative to the root folder of the github repo to work on streamlit cloud
+              
+            Python na vše??? Python na matematické výpočty, na Webapp pomocí streamlit, WebAPI pomocí waitress, podopora PowerBI, a další...
+            """
+        )
+        st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
+    '''
+    with right_column:
+        st_lottie(lottie_coding, height=300, key="coding")
+    '''        
