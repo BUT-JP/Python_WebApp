@@ -23,12 +23,12 @@ def local_css(file_name):
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("webApp powered by Streamlit")
-    st.title("Pokorný Jan, 2024")
+    st.title(" webApp powered by Streamlit"")
+    st.subheader("Pokorný Jan, 2024)
     st.write(
        """
-        https://github.com/BUT-JP/Python_WebApp
-        git add --all && git commit -m "v0.0.1" && git push
+        - https://github.com/BUT-JP/Python_WebApp
+        - git add --all && git commit -m "v0.0.1" && git push
        """
     )
     st.write("[Learn More >](https://pythonandvba.com)")
