@@ -41,15 +41,15 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-# local_css(r"D:\00_Coding\00_Python\07_Streamlit\webpage\style\style.css")
+local_css("style/style.css")
 
 '''
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl(r"https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 '''
 
-img_contact_form = Image.open(r"D:\00_Coding\00_Python\07_Streamlit\webpage\Images\yt_contact_form.png") #Image.open(r"Images/yt_contact_form.png")
-img_lottie_animation =Image.open(r'D:\00_Coding\00_Python\07_Streamlit\webpage\Images\yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
+img_contact_form = Image.open("images/yt_contact_form.png") 
+img_lottie_animation =Image.open('images/\yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
 
 
 # ---- HEADER SECTION ----
