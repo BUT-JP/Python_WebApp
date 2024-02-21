@@ -147,9 +147,9 @@ with st.container():
             - https://www.youtube.com/watch?v=nJHrSvYxzjE
             - -----------------------------------------------------------------------------    
             - https://discuss.streamlit.io/t/two-problems-when-deploying-from-a-folder-in-windows/56169/2
-              always use posix file paths with /, even on windows
-              always use relative paths
-              paths must be relative to the root folder of the github repo to work on streamlit cloud
+            - always use posix file paths with /, even on windows
+            - always use relative paths
+            - paths must be relative to the root folder of the github repo to work on streamlit cloud
               
             Python na vše??? Python na matematické výpočty, na Webapp pomocí streamlit, WebAPI pomocí waitress, podopora PowerBI, a další...
             """
