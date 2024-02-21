@@ -172,7 +172,6 @@ with st.container():
             - Streamlit code to html to be possible used as applet on sites,google
             - https://discuss.streamlit.io/t/saving-streamlit-application-to-a-webpage/2991
             - IMPORTANT: https://github.com/streamlit/streamlit/issues/611
-            
             It would made streamlit extremely popular if the HTML export existed It is incredible usefull for Data Scientists and the stakeholders would love it
             I hope it gets implemented one day
             """
