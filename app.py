@@ -41,7 +41,7 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-local_css(r"D:\00_Coding\00_Python\07_Streamlit\webpage\style\style.css")
+# local_css(r"D:\00_Coding\00_Python\07_Streamlit\webpage\style\style.css")
 
 '''
 # ---- LOAD ASSETS ----
