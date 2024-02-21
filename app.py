@@ -23,7 +23,7 @@ def local_css(file_name):
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.title(" webApp powered by Streamlit"")
+    st.title(" webApp powered by Streamlit")
     st.subheader("Pokorný Jan, 2024)
     st.write(
        """
