@@ -201,14 +201,24 @@ with st.container():
             - https://www.freecodecamp.org/news/git-switch-branch/
             - https://www.git-tower.com/learn/git/commands/git-checkout
             - ----------------------------------------------------------------------------- 
+            - https://www.mathworks.com/matlabcentral/answers/426258-how-to-convert-the-matlab-code-into-the-python#:~:text=To%20convert%20Matlab%20to%20python,best%20for%20small%2Dlevel%20codes.https://www.mathworks.com/matlabcentral/answers/426258-how-to-convert-the-matlab-code-into-the-python#:~:text=To%20convert%20Matlab%20to%20python,best%20for%20small%2Dlevel%20codes.
+            - ----------------------------------------------------------------------------- 
             
-            
+            - GIT--------------------------------------------------------- 
             git add --all && git commit -m "v0.0.2" && git push
             git ls-files
             git status
             git ls-tree -r master --name-only
             git checkout master
             git checkout -
+            git branch -d repo-01
+            
+            - GLOBALNE--------------------------------------------------------- 
+            git add --all && git commit -m "v0.0.1" && git push
+            - LOKALNE---------------------------------------------------------- 
+            d:
+            cd d:\00_coding\00_python\07_streamlit\webpage 
+            streamlit run d:\00_coding\00_python\07_streamlit\webpage\app.py
             """
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
