@@ -29,9 +29,7 @@ with st.container():
         - lze embedovat kamkoliv a pokud použiji GIT tak se to projeví všude na všech webech, kde jsem to embedoval např. https://sites.google.com/vutbr.cz/vutlca/api
         - https://github.com/BUT-JP/Python_WebApp (Python_WebApp  je private repository)
         - git add --all && git commit -m "v0.0.1" && git push
-        - lokální test cmdWIN: d: && cd  d:\00_coding\00_python\07_streamlit\webpage 
-        - streamlit run d:\00_coding\00_python\07_streamlit\webpage\app.py
-          
+        - lokální test cmdWIN: streamlit run d:\00_coding\00_python\07_streamlit\webpage\app.py
        """
     )
     st.write("[Learn More >](https://pythonandvba.com)")
@@ -40,14 +38,14 @@ with st.container():
 
 local_css("style/style.css")
 
-
+'''
 # ---- LOAD ASSETS ----
-# lottie_coding = load_lottieurl(r"https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-
-
+lottie_coding = load_lottieurl(r"https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
+'''
+'''
 img_contact_form = Image.open("images/yt_contact_form.png") 
 img_lottie_animation =Image.open('images/yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
-
+'''
 
 # ---- HEADER SECTION ----
 with st.container():
@@ -88,8 +86,8 @@ with st.container():
     st.header("My Projects")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_lottie_animation)
+   #  with image_column:
+      #  st.image(img_lottie_animation)
     with text_column:
         st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
         st.write(
@@ -102,8 +100,8 @@ with st.container():
         st.markdown("[Watch Video...](https://youtu.be/TXSOitGoINE)")
 with st.container():
     image_column, text_column = st.columns((1, 2))
-    with image_column:
-         st.image(img_contact_form)
+    # with image_column:
+    #     st.image(img_contact_form)
     with text_column:
         st.subheader("How To Add A Contact Form To Your Streamlit App")
         st.write(
@@ -190,13 +188,6 @@ with st.container():
             - https://towardsdatascience.com/3-easy-ways-to-deploy-your-streamlit-web-app-online-7c88bb1024b1
             - https://docs.streamlit.io/streamlit-community-cloud/share-your-app/embed-your-app
               https://pythonwebapp-m7chhvdpacwkmeqpvsed8b.streamlit.app//?embed=true   
-            - -----------------------------------------------------------------------------     
-            - https://discuss.streamlit.io/t/powerbi-dashboards-and-streamlit/15323
-            - https://www.youtube.com/c/MSPowerBI/search
-            - https://www.youtube.com/watch?v=Ynt7Etci1KU
-            - -----------------------------------------------------------------------------   
-            - https://www.youtube.com/watch?v=0T16w4Ubmqk
-            - https://www.nobleprog.cz/cc/spacy
             """
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
