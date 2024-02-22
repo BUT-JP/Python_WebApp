@@ -202,6 +202,7 @@ with st.container():
             - https://www.git-tower.com/learn/git/commands/git-checkout
             - ----------------------------------------------------------------------------- 
             - https://www.mathworks.com/matlabcentral/answers/426258-how-to-convert-the-matlab-code-into-the-python#:~:text=To%20convert%20Matlab%20to%20python,best%20for%20small%2Dlevel%20codes.https://www.mathworks.com/matlabcentral/answers/426258-how-to-convert-the-matlab-code-into-the-python#:~:text=To%20convert%20Matlab%20to%20python,best%20for%20small%2Dlevel%20codes.
+            - https://stackoverflow.com/questions/7199659/how-to-rename-git-root-folder
             - ----------------------------------------------------------------------------- 
             
             - GIT--------------------------------------------------------- 
@@ -212,6 +213,20 @@ with st.container():
             git checkout master
             git checkout -
             git branch -d repo-01
+            
+            - GIT rename folder
+            $ git ls-files
+            $ git mv basicApp basicapp_temp
+            $ git add .
+            $ git commit -am "temporary change"
+            git push origin master
+            $ git mv basicapp_temp basicapp
+            $ git add .
+            $ git commit -am "change to desired name"
+            $ git push origin master
+            
+            
+            git checkout master
             
             - GLOBALNE--------------------------------------------------------- 
             git add --all && git commit -m "v0.0.1" && git push
