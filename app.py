@@ -45,8 +45,8 @@ local_css("style/style.css")
 # lottie_coding = load_lottieurl(r"https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
 
 
-img_contact_form = Image.open('images/yt_contact_form.png') 
-img_lottie_animation =Image.open('images/yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
+img_contact_form = Image.open('Images/yt_contact_form.png') 
+img_lottie_animation =Image.open('Images/yt_lottie_animation.png') #Image.open(r"Images/yt_lottie_animation.png")
 
 
 # ---- HEADER SECTION ----
@@ -226,7 +226,13 @@ with st.container():
             $ git push origin master
             
             
+            git mv <oldname> <newname>
+            git add <newname>
+            git commit -m "Renaming folder"
+            git push -u origin main
+            
             git checkout master
+            git mv Images images -* nefunugje
             
             - GLOBALNE--------------------------------------------------------- 
             git add --all && git commit -m "v0.0.1" && git push
