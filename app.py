@@ -197,6 +197,18 @@ with st.container():
             - -----------------------------------------------------------------------------   
             - https://www.youtube.com/watch?v=0T16w4Ubmqk
             - https://www.nobleprog.cz/cc/spacy
+            - https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+            - https://www.freecodecamp.org/news/git-switch-branch/
+            - https://www.git-tower.com/learn/git/commands/git-checkout
+            - ----------------------------------------------------------------------------- 
+            
+            
+            git add --all && git commit -m "v0.0.2" && git push
+            git ls-files
+            git status
+            git ls-tree -r master --name-only
+            git checkout master
+            git checkout -
             """
         )
         st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
